@@ -13,17 +13,17 @@ offlineFallback();
 staticResourceCache();
 
 // Set up page cache
-// const pageCache = new CacheFirst({
-//   cacheName: 'page-cache',
-//   plugins: [
-//     new CacheableResponsePlugin({
-//       statuses: [0, 200],
-//     }),
-//     new ExpirationPlugin({
-//       maxAgeSeconds: 30 * 24 * 60 * 60,
-//     }),
-//   ],
-// });
+const pageCache = new CacheFirst({
+	cacheName: 'page-cache',
+	plugins: [
+		new CacheableResponsePlugin({
+			statuses: [0, 200],
+		}),
+		new ExpirationPlugin({
+			maxAgeSeconds: 30 * 24 * 60 * 60,
+		}),
+	],
+});
 
 warmStrategyCache({
 	urls: ['/index.html', '/'],
