@@ -1,6 +1,7 @@
 # mod19-pwa19
 
 [Link to deployed Render App](https://boose-bear.onrender.com)
+![Deployed Photo](./client/utils/deployedProject.png)
 
 ## Progressive Web Applications (PWA): Text Editor
 
